@@ -1,0 +1,104 @@
+\doxysection{Concesionario.\+Model.\+Repo.\+Reservas\+Repo Class Reference}
+\hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo}{}\label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+
+
+Repositorio para la gestión de reservas y el estado asociado de las motos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_a4f49db0f95513f3cc7956cf73afcae34}{Get\+All\+Reservas}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las reservas incluyendo la información relacionada de clientes y motos mediante carga ansiosa ({\ttfamily Include}). \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac6e319602e68eee084b310333acfbd79}{Get\+Motos\+Disponibles}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de motos disponibles, es decir, aquellas cuyo campo {\ttfamily estado} es "{}Disponible"{}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ab655212a6b0a1c9ae12d631b39916cce}{Agregar\+Reserva}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} r)
+\begin{DoxyCompactList}\small\item\em Agrega una nueva reserva y marca la moto asociada como "{}Reservada"{}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac84b44cc787d03f209e7c6786359411b}{Editar\+Reserva}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} r)
+\begin{DoxyCompactList}\small\item\em Edita una reserva existente. Si cambia la moto asociada, libera la moto anterior (estado "{}Disponible"{}) y marca la nueva como "{}Reservada"{}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ae77b96e8c1d591f5f6ccebcf26c0fb43}{Eliminar\+Reserva}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina una reserva por identificador y vuelve a marcar la moto asociada como "{}Disponible"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio para la gestión de reservas y el estado asociado de las motos. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ab655212a6b0a1c9ae12d631b39916cce}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}!AgregarReserva@{AgregarReserva}}
+\index{AgregarReserva@{AgregarReserva}!Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+\doxysubsubsection{\texorpdfstring{AgregarReserva()}{AgregarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ab655212a6b0a1c9ae12d631b39916cce} 
+void Concesionario.\+Model.\+Repo.\+Reservas\+Repo.\+Agregar\+Reserva (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega una nueva reserva y marca la moto asociada como "{}Reservada"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Entidad \doxylink{class_concesionario_1_1_model_1_1_reservas}{Reservas} a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac84b44cc787d03f209e7c6786359411b}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}!EditarReserva@{EditarReserva}}
+\index{EditarReserva@{EditarReserva}!Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+\doxysubsubsection{\texorpdfstring{EditarReserva()}{EditarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac84b44cc787d03f209e7c6786359411b} 
+void Concesionario.\+Model.\+Repo.\+Reservas\+Repo.\+Editar\+Reserva (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita una reserva existente. Si cambia la moto asociada, libera la moto anterior (estado "{}Disponible"{}) y marca la nueva como "{}Reservada"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Entidad \doxylink{class_concesionario_1_1_model_1_1_reservas}{Reservas} con los nuevos datos.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ae77b96e8c1d591f5f6ccebcf26c0fb43}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}!EliminarReserva@{EliminarReserva}}
+\index{EliminarReserva@{EliminarReserva}!Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+\doxysubsubsection{\texorpdfstring{EliminarReserva()}{EliminarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ae77b96e8c1d591f5f6ccebcf26c0fb43} 
+void Concesionario.\+Model.\+Repo.\+Reservas\+Repo.\+Eliminar\+Reserva (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina una reserva por identificador y vuelve a marcar la moto asociada como "{}Disponible"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador de la reserva a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_a4f49db0f95513f3cc7956cf73afcae34}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}!GetAllReservas@{GetAllReservas}}
+\index{GetAllReservas@{GetAllReservas}!Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+\doxysubsubsection{\texorpdfstring{GetAllReservas()}{GetAllReservas()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_a4f49db0f95513f3cc7956cf73afcae34} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} $>$ Concesionario.\+Model.\+Repo.\+Reservas\+Repo.\+Get\+All\+Reservas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todas las reservas incluyendo la información relacionada de clientes y motos mediante carga ansiosa ({\ttfamily Include}). 
+
+\begin{DoxyReturn}{Returns}
+Lista con todas las reservas.
+\end{DoxyReturn}
+\Hypertarget{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac6e319602e68eee084b310333acfbd79}\index{Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}!GetMotosDisponibles@{GetMotosDisponibles}}
+\index{GetMotosDisponibles@{GetMotosDisponibles}!Concesionario.Model.Repo.ReservasRepo@{Concesionario.Model.Repo.ReservasRepo}}
+\doxysubsubsection{\texorpdfstring{GetMotosDisponibles()}{GetMotosDisponibles()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo_ac6e319602e68eee084b310333acfbd79} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ Concesionario.\+Model.\+Repo.\+Reservas\+Repo.\+Get\+Motos\+Disponibles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de motos disponibles, es decir, aquellas cuyo campo {\ttfamily estado} es "{}Disponible"{}. 
+
+\begin{DoxyReturn}{Returns}
+Lista de motos disponibles para reservar o vender.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Model/\+\+Repo/\+Reservas\+Repo.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\doxysection{Concesionario.\+Controller.\+API.\+Taller\+Api Class Reference}
+\hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api}{}\label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+
+
+Servicio de lógica de negocio para gestionar los mantenimientos del taller. Encapsula las validaciones de negocio y usa \doxylink{class_concesionario_1_1_model_1_1_taller_repo}{Taller\+Repo} para el acceso a datos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_af72e19572af70cf38e3478e625e34d35}{Obtener\+Mantenimientos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todos los mantenimientos registrados en el taller. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a009dceb6380c7deba5a7e4692f852fed}{Agregar\+Mantenimiento}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} m)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo mantenimiento al taller. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a172918288f0beaba799e008e2dc15d9c}{Actualizar\+Mantenimiento}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} m)
+\begin{DoxyCompactList}\small\item\em Actualiza un mantenimiento existente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a76b24486cdf741a046b43609bd5fc103}{Eliminar\+Mantenimiento}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un mantenimiento por su identificador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_ac9b0c947adab35b77b336a8a73c345f8}{validar\+Campos}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} m)
+\begin{DoxyCompactList}\small\item\em Valida las reglas de negocio de un mantenimiento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio de lógica de negocio para gestionar los mantenimientos del taller. Encapsula las validaciones de negocio y usa \doxylink{class_concesionario_1_1_model_1_1_taller_repo}{Taller\+Repo} para el acceso a datos. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a172918288f0beaba799e008e2dc15d9c}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}!ActualizarMantenimiento@{ActualizarMantenimiento}}
+\index{ActualizarMantenimiento@{ActualizarMantenimiento}!Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+\doxysubsubsection{\texorpdfstring{ActualizarMantenimiento()}{ActualizarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a172918288f0beaba799e008e2dc15d9c} 
+void Concesionario.\+Controller.\+API.\+Taller\+Api.\+Actualizar\+Mantenimiento (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza un mantenimiento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mantenimiento con los datos actualizados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a009dceb6380c7deba5a7e4692f852fed}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}!AgregarMantenimiento@{AgregarMantenimiento}}
+\index{AgregarMantenimiento@{AgregarMantenimiento}!Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+\doxysubsubsection{\texorpdfstring{AgregarMantenimiento()}{AgregarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a009dceb6380c7deba5a7e4692f852fed} 
+void Concesionario.\+Controller.\+API.\+Taller\+Api.\+Agregar\+Mantenimiento (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo mantenimiento al taller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mantenimiento a agregar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si los datos no son válidos o al guardar en la base de datos.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a76b24486cdf741a046b43609bd5fc103}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}!EliminarMantenimiento@{EliminarMantenimiento}}
+\index{EliminarMantenimiento@{EliminarMantenimiento}!Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+\doxysubsubsection{\texorpdfstring{EliminarMantenimiento()}{EliminarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_a76b24486cdf741a046b43609bd5fc103} 
+void Concesionario.\+Controller.\+API.\+Taller\+Api.\+Eliminar\+Mantenimiento (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un mantenimiento por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del mantenimiento a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_af72e19572af70cf38e3478e625e34d35}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}!ObtenerMantenimientos@{ObtenerMantenimientos}}
+\index{ObtenerMantenimientos@{ObtenerMantenimientos}!Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+\doxysubsubsection{\texorpdfstring{ObtenerMantenimientos()}{ObtenerMantenimientos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_af72e19572af70cf38e3478e625e34d35} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} $>$ Concesionario.\+Controller.\+API.\+Taller\+Api.\+Obtener\+Mantenimientos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todos los mantenimientos registrados en el taller. 
+
+\begin{DoxyReturn}{Returns}
+Lista de entidades \doxylink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos} con sus motos y mecánicos relacionados.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si ocurre un error al acceder a la base de datos.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_ac9b0c947adab35b77b336a8a73c345f8}\index{Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}!validarCampos@{validarCampos}}
+\index{validarCampos@{validarCampos}!Concesionario.Controller.API.TallerApi@{Concesionario.Controller.API.TallerApi}}
+\doxysubsubsection{\texorpdfstring{validarCampos()}{validarCampos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_taller_api_ac9b0c947adab35b77b336a8a73c345f8} 
+void Concesionario.\+Controller.\+API.\+Taller\+Api.\+validar\+Campos (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida las reglas de negocio de un mantenimiento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mantenimiento a validar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si falta la moto o el mecánico, el motivo está vacío, el coste es negativo o las fechas son inconsistentes. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Controller/\+\+API/\+Taller\+Api.\+cs\end{DoxyCompactItemize}

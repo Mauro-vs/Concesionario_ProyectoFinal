@@ -1,0 +1,94 @@
+\doxysection{Concesionario.\+Model.\+Taller\+Repo Class Reference}
+\hypertarget{class_concesionario_1_1_model_1_1_taller_repo}{}\label{class_concesionario_1_1_model_1_1_taller_repo}\index{Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}}
+
+
+Repositorio de acceso a datos para los mantenimientos del taller. Usa Entity Framework sobre \doxylink{class_concesionario_1_1_model_1_1_concesionario_b_d_entities1}{Concesionario\+BDEntities1}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_a50621491c2909fe93ab755d600496346}\label{class_concesionario_1_1_model_1_1_taller_repo_a50621491c2909fe93ab755d600496346} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} $>$ {\bfseries Get\+All\+Mantenimientos} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los mantenimientos, incluyendo datos de motos y mecánicos. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_taller_repo_ac06a0d8fac8a962f76c19f7d5ae77477}{Get\+Mantenimiento\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Busca un mantenimiento por su identificador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_taller_repo_a4ef21287d2239ba803968cce01d0494b}{Agregar\+Mantenimiento}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} m)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo mantenimiento y marca la moto como "{}\+Taller"{}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_taller_repo_a0c2b2429b5325ca9aff1396e56f73b09}{Editar\+Mantenimiento}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} m)
+\begin{DoxyCompactList}\small\item\em Actualiza un mantenimiento existente; si cambia de moto, ajusta el estado de la moto anterior y de la nueva. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_taller_repo_a3da2a3dcfd650a845327b536afe1555e}{Eliminar\+Mantenimiento}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un mantenimiento y devuelve la moto asociada al estado "{}\+Disponible"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio de acceso a datos para los mantenimientos del taller. Usa Entity Framework sobre \doxylink{class_concesionario_1_1_model_1_1_concesionario_b_d_entities1}{Concesionario\+BDEntities1}. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_a4ef21287d2239ba803968cce01d0494b}\index{Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}!AgregarMantenimiento@{AgregarMantenimiento}}
+\index{AgregarMantenimiento@{AgregarMantenimiento}!Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}}
+\doxysubsubsection{\texorpdfstring{AgregarMantenimiento()}{AgregarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_taller_repo_a4ef21287d2239ba803968cce01d0494b} 
+void Concesionario.\+Model.\+Taller\+Repo.\+Agregar\+Mantenimiento (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta un nuevo mantenimiento y marca la moto como "{}\+Taller"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mantenimiento a insertar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_a0c2b2429b5325ca9aff1396e56f73b09}\index{Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}!EditarMantenimiento@{EditarMantenimiento}}
+\index{EditarMantenimiento@{EditarMantenimiento}!Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}}
+\doxysubsubsection{\texorpdfstring{EditarMantenimiento()}{EditarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_taller_repo_a0c2b2429b5325ca9aff1396e56f73b09} 
+void Concesionario.\+Model.\+Taller\+Repo.\+Editar\+Mantenimiento (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza un mantenimiento existente; si cambia de moto, ajusta el estado de la moto anterior y de la nueva. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mantenimiento con los datos actualizados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_a3da2a3dcfd650a845327b536afe1555e}\index{Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}!EliminarMantenimiento@{EliminarMantenimiento}}
+\index{EliminarMantenimiento@{EliminarMantenimiento}!Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}}
+\doxysubsubsection{\texorpdfstring{EliminarMantenimiento()}{EliminarMantenimiento()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_taller_repo_a3da2a3dcfd650a845327b536afe1555e} 
+void Concesionario.\+Model.\+Taller\+Repo.\+Eliminar\+Mantenimiento (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un mantenimiento y devuelve la moto asociada al estado "{}\+Disponible"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del mantenimiento a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_taller_repo_ac06a0d8fac8a962f76c19f7d5ae77477}\index{Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}!GetMantenimientoById@{GetMantenimientoById}}
+\index{GetMantenimientoById@{GetMantenimientoById}!Concesionario.Model.TallerRepo@{Concesionario.Model.TallerRepo}}
+\doxysubsubsection{\texorpdfstring{GetMantenimientoById()}{GetMantenimientoById()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_taller_repo_ac06a0d8fac8a962f76c19f7d5ae77477} 
+\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_mantenimientos}{Mantenimientos}} Concesionario.\+Model.\+Taller\+Repo.\+Get\+Mantenimiento\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Busca un mantenimiento por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del mantenimiento.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Model/\+\+Repo/\+Taller\+Repo.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\doxysection{Concesionario.\+Controller.\+API.\+Modelo\+Api Class Reference}
+\hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api}{}\label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+
+
+Logica de negocio para la gestión de modelos de motos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa31f5017fd3a18a85f8bfb5871e3155a}{Obtener\+Modelos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todos los modelos de motos registrados en el concesionario, incluyendo sus detalles. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_af72d9a298259dcd91f518bebf4407240}{Agregar\+Modelo}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} modelo)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo modelo de moto al concesionario después de validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a48dee10ee686e458c3c7e29afb775c23}{Actualizar\+Modelo}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} modelo)
+\begin{DoxyCompactList}\small\item\em Actualiza los datos de un modelo de moto existente en el concesionario después de validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_adfcd0f2ab5972a549e92b75dba6d5028}{Eliminar\+Modelo}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un modelo de moto del concesionario. Antes de eliminar, se debe verificar que el modelo no tenga mantenimientos pendientes en el taller para evitar inconsistencias en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a3d347e8d54d10e73e97345ac4194a5a4}{validar\+Campos}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} modelo)
+\begin{DoxyCompactList}\small\item\em Validamos los campos de un modelo de moto para asegurarnos de que cumplen con las reglas de negocio antes de agregarlo o actualizarlo en la base de datos. Esto incluye validar que los campos obligatorios estén presentes, que los valores numéricos sean razonables, y que la matrícula tenga un formato correcto y sea única si se proporciona. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa1366e5870a179084d1b1051336ad848}{validar\+Matricula}} (string matricula)
+\begin{DoxyCompactList}\small\item\em Valida que la matrícula de la moto tenga un formato correcto. En este ejemplo, se espera un formato de 4 dígitos seguidos de 3 letras mayúsculas (ejemplo:\+ 1234ABC). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_ac9bdb7b73b9118439ae150408030fdf9}{validar\+Matricula\+Unica}} (string matricula, int? id\+Moto=null)
+\begin{DoxyCompactList}\small\item\em Valida que la matrícula de la moto sea única en el sistema. Si se está agregando un nuevo modelo, se verifica que no exista ningún otro modelo con la misma matrícula. /\+/\+/\+ Si se está actualizando un modelo existente, se permite que tenga la misma matrícula siempre y cuando no haya otro modelo diferente con esa matrícula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logica de negocio para la gestión de modelos de motos. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a48dee10ee686e458c3c7e29afb775c23}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!ActualizarModelo@{ActualizarModelo}}
+\index{ActualizarModelo@{ActualizarModelo}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{ActualizarModelo()}{ActualizarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a48dee10ee686e458c3c7e29afb775c23} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+Actualizar\+Modelo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}}}]{modelo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza los datos de un modelo de moto existente en el concesionario después de validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelo} & Modelo de moto con los datos actualizados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_af72d9a298259dcd91f518bebf4407240}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!AgregarModelo@{AgregarModelo}}
+\index{AgregarModelo@{AgregarModelo}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{AgregarModelo()}{AgregarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_af72d9a298259dcd91f518bebf4407240} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+Agregar\+Modelo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}}}]{modelo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo modelo de moto al concesionario después de validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelo} & Modelo de moto a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_adfcd0f2ab5972a549e92b75dba6d5028}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!EliminarModelo@{EliminarModelo}}
+\index{EliminarModelo@{EliminarModelo}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{EliminarModelo()}{EliminarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_adfcd0f2ab5972a549e92b75dba6d5028} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+Eliminar\+Modelo (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un modelo de moto del concesionario. Antes de eliminar, se debe verificar que el modelo no tenga mantenimientos pendientes en el taller para evitar inconsistencias en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del modelo de moto a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa31f5017fd3a18a85f8bfb5871e3155a}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!ObtenerModelos@{ObtenerModelos}}
+\index{ObtenerModelos@{ObtenerModelos}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{ObtenerModelos()}{ObtenerModelos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa31f5017fd3a18a85f8bfb5871e3155a} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ Concesionario.\+Controller.\+API.\+Modelo\+Api.\+Obtener\+Modelos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todos los modelos de motos registrados en el concesionario, incluyendo sus detalles. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a3d347e8d54d10e73e97345ac4194a5a4}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!validarCampos@{validarCampos}}
+\index{validarCampos@{validarCampos}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{validarCampos()}{validarCampos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_a3d347e8d54d10e73e97345ac4194a5a4} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+validar\+Campos (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}}}]{modelo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Validamos los campos de un modelo de moto para asegurarnos de que cumplen con las reglas de negocio antes de agregarlo o actualizarlo en la base de datos. Esto incluye validar que los campos obligatorios estén presentes, que los valores numéricos sean razonables, y que la matrícula tenga un formato correcto y sea única si se proporciona. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelo} & Modelo de moto a validar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Se produce si el modelo es nulo.\\
+\hline
+{\em Exception} & Se produce si algún campo no cumple con las reglas de validación.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa1366e5870a179084d1b1051336ad848}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!validarMatricula@{validarMatricula}}
+\index{validarMatricula@{validarMatricula}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{validarMatricula()}{validarMatricula()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_aa1366e5870a179084d1b1051336ad848} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+validar\+Matricula (\begin{DoxyParamCaption}\item[{string}]{matricula}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida que la matrícula de la moto tenga un formato correcto. En este ejemplo, se espera un formato de 4 dígitos seguidos de 3 letras mayúsculas (ejemplo:\+ 1234ABC). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matricula} & Matrícula a validar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si la matrícula no cumple con el formato esperado.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_ac9bdb7b73b9118439ae150408030fdf9}\index{Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}!validarMatriculaUnica@{validarMatriculaUnica}}
+\index{validarMatriculaUnica@{validarMatriculaUnica}!Concesionario.Controller.API.ModeloApi@{Concesionario.Controller.API.ModeloApi}}
+\doxysubsubsection{\texorpdfstring{validarMatriculaUnica()}{validarMatriculaUnica()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_modelo_api_ac9bdb7b73b9118439ae150408030fdf9} 
+void Concesionario.\+Controller.\+API.\+Modelo\+Api.\+validar\+Matricula\+Unica (\begin{DoxyParamCaption}\item[{string}]{matricula}{, }\item[{int?}]{id\+Moto}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida que la matrícula de la moto sea única en el sistema. Si se está agregando un nuevo modelo, se verifica que no exista ningún otro modelo con la misma matrícula. /\+/\+/\+ Si se está actualizando un modelo existente, se permite que tenga la misma matrícula siempre y cuando no haya otro modelo diferente con esa matrícula. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matricula} & Matrícula a validar.\\
+\hline
+{\em id\+Moto} & Identificador del modelo de moto que se está actualizando (opcional).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si ya existe otro modelo con la misma matrícula.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Controller/\+\+API/\+Modelo\+Api.\+cs\end{DoxyCompactItemize}

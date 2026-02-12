@@ -1,0 +1,109 @@
+\doxysection{Concesionario.\+Model.\+Modelo\+Repo Class Reference}
+\hypertarget{class_concesionario_1_1_model_1_1_modelo_repo}{}\label{class_concesionario_1_1_model_1_1_modelo_repo}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+
+
+Repositorio para gestionar operaciones CRUD sobre la entidad \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_modelo_repo_afde5cc0edf0376de953745c43c081102}{Get\+Modelos}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista completa de motos registradas en la base de datos. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_modelo_repo_a2caf9e7efd19d5e31ce6a994ee3ab5c9}{Get\+Modelo\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Obtiene una moto a partir de su identificador único. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_modelo_repo_a07070c0792efe5b5c47ba7128e1b0ce4}{Agregar\+Modelo}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} modelo)
+\begin{DoxyCompactList}\small\item\em Agrega una nueva moto al contexto y guarda los cambios en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_modelo_repo_a8a1cd22d176884523a7b611f6a8d2206}{Actualizar\+Modelo}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} modelo)
+\begin{DoxyCompactList}\small\item\em Actualiza la información de una moto existente en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_modelo_repo_a8bd7898dba21c30b0cf6c786b49359c7}{Eliminar\+Modelo}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina una moto de la base de datos a partir de su identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio para gestionar operaciones CRUD sobre la entidad \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos}. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_a8a1cd22d176884523a7b611f6a8d2206}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}!ActualizarModelo@{ActualizarModelo}}
+\index{ActualizarModelo@{ActualizarModelo}!Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+\doxysubsubsection{\texorpdfstring{ActualizarModelo()}{ActualizarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_modelo_repo_a8a1cd22d176884523a7b611f6a8d2206} 
+void Concesionario.\+Model.\+Modelo\+Repo.\+Actualizar\+Modelo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}}}]{modelo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza la información de una moto existente en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelo} & Objeto \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos} con los valores actualizados. Debe contener un valor válido en la propiedad Motos.\+id\+\_\+moto. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_a07070c0792efe5b5c47ba7128e1b0ce4}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}!AgregarModelo@{AgregarModelo}}
+\index{AgregarModelo@{AgregarModelo}!Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+\doxysubsubsection{\texorpdfstring{AgregarModelo()}{AgregarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_modelo_repo_a07070c0792efe5b5c47ba7128e1b0ce4} 
+void Concesionario.\+Model.\+Modelo\+Repo.\+Agregar\+Modelo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}}}]{modelo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega una nueva moto al contexto y guarda los cambios en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelo} & Objeto \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos} que contiene la información de la moto a insertar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_a8bd7898dba21c30b0cf6c786b49359c7}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}!EliminarModelo@{EliminarModelo}}
+\index{EliminarModelo@{EliminarModelo}!Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+\doxysubsubsection{\texorpdfstring{EliminarModelo()}{EliminarModelo()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_modelo_repo_a8bd7898dba21c30b0cf6c786b49359c7} 
+void Concesionario.\+Model.\+Modelo\+Repo.\+Eliminar\+Modelo (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina una moto de la base de datos a partir de su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador de la moto que se desea eliminar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_a2caf9e7efd19d5e31ce6a994ee3ab5c9}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}!GetModeloById@{GetModeloById}}
+\index{GetModeloById@{GetModeloById}!Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+\doxysubsubsection{\texorpdfstring{GetModeloById()}{GetModeloById()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_modelo_repo_a2caf9e7efd19d5e31ce6a994ee3ab5c9} 
+\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} Concesionario.\+Model.\+Modelo\+Repo.\+Get\+Modelo\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene una moto a partir de su identificador único. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador de la moto que se desea recuperar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La instancia de \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos} cuyo identificador coincide con el proporcionado, o {\ttfamily null} si no se encuentra ningún registro. 
+\end{DoxyReturn}
+\Hypertarget{class_concesionario_1_1_model_1_1_modelo_repo_afde5cc0edf0376de953745c43c081102}\index{Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}!GetModelos@{GetModelos}}
+\index{GetModelos@{GetModelos}!Concesionario.Model.ModeloRepo@{Concesionario.Model.ModeloRepo}}
+\doxysubsubsection{\texorpdfstring{GetModelos()}{GetModelos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_model_1_1_modelo_repo_afde5cc0edf0376de953745c43c081102} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ Concesionario.\+Model.\+Modelo\+Repo.\+Get\+Modelos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista completa de motos registradas en la base de datos. 
+
+\begin{DoxyReturn}{Returns}
+Una lista de objetos \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos} con todos los modelos existentes. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Model/\+\+Repo/\+Modelo\+Repo.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,202 @@
+﻿<Window x:Class="Concesionario.ViewWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Concesionario.ViewWPF"
+        mc:Ignorable="d"
+        Title="Concesionario Hakuna MaMoto" Height="540" Width="700"
+        Background="#FF1E1E1E"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Panel izquierdo (menú) -->
+        <Border Grid.Column="0"
+                CornerRadius="10"
+                Background="#FF2D2D30"
+                Padding="20"
+                Margin="0,0,15,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Título -->
+                <StackPanel Grid.Row="0" Orientation="Vertical">
+                    <TextBlock x:Name="Titulo"
+                               Text="Hakuna"
+                               FontSize="36"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               Margin="0,0,0,0" />
+
+                    <TextBlock x:Name="Titulo_2"
+                               Text="MaMoto"
+                               FontSize="36"
+                               FontWeight="Bold"
+                               Foreground="#FFABCFE2"
+                               Margin="0,-10,0,0" Width="144" />
+                </StackPanel>
+
+                <!-- Separador -->
+                <Separator Grid.Row="2"
+                           Margin="0,10"
+                           Background="#FF3E3E42"
+                           Height="2" />
+
+                <!-- Menú -->
+                <StackPanel Grid.Row="3"
+                            Margin="0,20,0,0"
+                            VerticalAlignment="Top"
+                            Orientation="Vertical"
+                            Background="#002D2D30">
+                    <!-- Catálogo -->
+                    <Button x:Name="btnCatalogo"
+                            Margin="0,0,0,10"
+                            Padding="10"
+                            Background="#003E3E42"
+                            Foreground="#FFABCFE2"
+                            BorderBrush="#FFABCFE2"
+                            BorderThickness="1"
+                            FontSize="18"
+                            HorizontalContentAlignment="Left"
+                            Cursor="Hand" Click="btnCatalogo_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⇒"
+                                       FontSize="18"
+                                       Margin="0,0,10,0" />
+                            <TextBlock x:Name="lblCatalogo"
+                                       Text="Catálogo"
+                                       FontSize="18"
+                                       FontWeight="Bold" />
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Taller -->
+                    <Button x:Name="btnTaller"
+                            Margin="0,0,0,10"
+                            Padding="10"
+                            Background="#003E3E42"
+                            Foreground="#FFABCFE2"
+                            BorderBrush="#FFABCFE2"
+                            BorderThickness="1"
+                            FontSize="18"
+                            HorizontalContentAlignment="Left"
+                            Cursor="Hand" Click="btnTaller_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⇒"
+                                       FontSize="18"
+                                       Margin="0,0,10,0" />
+                            <TextBlock x:Name="lblTaller"
+                                       Text="Taller"
+                                       FontSize="18"
+                                       FontWeight="Bold" />
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Clientes -->
+                    <Button x:Name="btnClientes"
+                            Margin="0,0,0,10"
+                            Padding="10"
+                            Background="#003E3E42"
+                            Foreground="#FFABCFE2"
+                            BorderBrush="#FFABCFE2"
+                            BorderThickness="1"
+                            FontSize="18"
+                            HorizontalContentAlignment="Left"
+                            Cursor="Hand" Click="btnClientes_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⇒"
+                                       FontSize="18"
+                                       Margin="0,0,10,0" />
+                            <TextBlock x:Name="lblClientes"
+                                       Text="Clientes"
+                                       FontSize="18"
+                                       FontWeight="Bold" />
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Mecánicos -->
+                    <Button x:Name="btnMecanico"
+                            Margin="0,0,0,0"
+                            Padding="10"
+                            Background="#003E3E42"
+                            Foreground="#FFABCFE2"
+                            BorderBrush="#FFABCFE2"
+                            BorderThickness="1"
+                            FontSize="18"
+                            HorizontalContentAlignment="Left"
+                            Cursor="Hand" Click="btnMecanico_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⇒"
+                                       FontSize="18"
+                                       Margin="0,0,10,0" />
+                            <TextBlock x:Name="lblMecanicos"
+                                       Text="Mecánicos"
+                                       FontSize="18"
+                                       FontWeight="Bold" />
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Mecánicos -->
+                    <Button x:Name="btnReservas"
+                             Margin="0,10,0,0"
+                             Padding="10"
+                             Background="#003E3E42"
+                             Foreground="#FFABCFE2"
+                             BorderBrush="#FFABCFE2"
+                             BorderThickness="1"
+                             FontSize="18"
+                             HorizontalContentAlignment="Left"
+                             Cursor="Hand" Click="btnReservas_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⇒"
+                                        FontSize="18"
+                                        Margin="0,0,10,0" />
+                            <TextBlock x:Name="lblReservas"
+                                        Text="Reservas"
+                                        FontSize="18"
+                                        FontWeight="Bold" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Panel derecho (imagen / contenido) -->
+        <Border Grid.Column="1"
+                CornerRadius="10"
+                Background="#FFA1A1A7"
+                Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Bienvenido al concesionario"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Margin="0,0,0,10" />
+
+                <Image Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Stretch="Uniform"
+                       Width="350"
+                       Source="/icon.png"
+                       Opacity="0.9" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

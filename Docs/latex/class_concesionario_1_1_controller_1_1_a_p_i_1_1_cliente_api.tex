@@ -1,0 +1,157 @@
+\doxysection{Concesionario.\+Controller.\+API.\+Cliente\+Api Class Reference}
+\hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api}{}\label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+
+
+Proporciona operaciones de gestión y validación para entidades de tipo \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a661d01c95d7f9c734e76c10a83685203}{Obtener\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista completa de clientes desde el repositorio. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ab9074ef71cb60d8aed61590e1ab1e2d4}{Agregar\+Cliente}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo cliente después de validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a6e2c0db49b2818edab6e2ba7fc6348d4}{Actualizar\+Cliente}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Actualiza los datos de un cliente existente después de validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a05d0dfb11466a9d84892919e71d19b65}{Eliminar\+Cliente}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un cliente por su identificador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a4e994d0e03dbe3839e82489f0031c280}{validar\+Campos}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Valida los campos obligatorios y el formato de los datos de un cliente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ae21d29298fe6ae5825b13b90dfc3cd1f}{Validar\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em Valida que una dirección de correo tenga un formato correcto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a2d5a58b31badada73822e1967de436cf}{Validar\+DNI}} (string dni, int? id\+\_\+cliente=null)
+\begin{DoxyCompactList}\small\item\em Valida el formato del DNI y comprueba que sea único en la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proporciona operaciones de gestión y validación para entidades de tipo \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes}. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a6e2c0db49b2818edab6e2ba7fc6348d4}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!ActualizarCliente@{ActualizarCliente}}
+\index{ActualizarCliente@{ActualizarCliente}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{ActualizarCliente()}{ActualizarCliente()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a6e2c0db49b2818edab6e2ba7fc6348d4} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Actualizar\+Cliente (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza los datos de un cliente existente después de validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Instancia de \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes} con los datos actualizados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ab9074ef71cb60d8aed61590e1ab1e2d4}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!AgregarCliente@{AgregarCliente}}
+\index{AgregarCliente@{AgregarCliente}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{AgregarCliente()}{AgregarCliente()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ab9074ef71cb60d8aed61590e1ab1e2d4} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Agregar\+Cliente (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo cliente después de validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Instancia de \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes} con los datos del nuevo cliente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a05d0dfb11466a9d84892919e71d19b65}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!EliminarCliente@{EliminarCliente}}
+\index{EliminarCliente@{EliminarCliente}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{EliminarCliente()}{EliminarCliente()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a05d0dfb11466a9d84892919e71d19b65} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Eliminar\+Cliente (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un cliente por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único del cliente a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a661d01c95d7f9c734e76c10a83685203}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!ObtenerClientes@{ObtenerClientes}}
+\index{ObtenerClientes@{ObtenerClientes}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{ObtenerClientes()}{ObtenerClientes()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a661d01c95d7f9c734e76c10a83685203} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}} $>$ Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Obtener\+Clientes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista completa de clientes desde el repositorio. 
+
+\begin{DoxyReturn}{Returns}
+Lista de objetos \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes}.
+\end{DoxyReturn}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a4e994d0e03dbe3839e82489f0031c280}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!validarCampos@{validarCampos}}
+\index{validarCampos@{validarCampos}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{validarCampos()}{validarCampos()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a4e994d0e03dbe3839e82489f0031c280} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+validar\+Campos (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida los campos obligatorios y el formato de los datos de un cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Instancia de \doxylink{class_concesionario_1_1_model_1_1_clientes}{Clientes} a validar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si algún campo obligatorio está vacío, si el teléfono no tiene 9 dígitos, si el email no es válido o si el DNI es inválido o está duplicado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a2d5a58b31badada73822e1967de436cf}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!ValidarDNI@{ValidarDNI}}
+\index{ValidarDNI@{ValidarDNI}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{ValidarDNI()}{ValidarDNI()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_a2d5a58b31badada73822e1967de436cf} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Validar\+DNI (\begin{DoxyParamCaption}\item[{string}]{dni}{, }\item[{int?}]{id\+\_\+cliente}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida el formato del DNI y comprueba que sea único en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dni} & DNI a validar.\\
+\hline
+{\em id\+\_\+cliente} & Identificador del cliente actual (opcional). Se usa para excluirlo al comprobar duplicados en actualizaciones. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si el DNI no tiene un formato válido o si ya existe asociado a otro cliente. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ae21d29298fe6ae5825b13b90dfc3cd1f}\index{Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}!ValidarEmail@{ValidarEmail}}
+\index{ValidarEmail@{ValidarEmail}!Concesionario.Controller.API.ClienteApi@{Concesionario.Controller.API.ClienteApi}}
+\doxysubsubsection{\texorpdfstring{ValidarEmail()}{ValidarEmail()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api_ae21d29298fe6ae5825b13b90dfc3cd1f} 
+void Concesionario.\+Controller.\+API.\+Cliente\+Api.\+Validar\+Email (\begin{DoxyParamCaption}\item[{string}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valida que una dirección de correo tenga un formato correcto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Dirección de correo electrónico a validar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Se produce si el email no cumple el formato esperado. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Controller/\+\+API/\+Cliente\+Api.\+cs\end{DoxyCompactItemize}

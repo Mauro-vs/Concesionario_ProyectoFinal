@@ -1,0 +1,204 @@
+﻿<Window x:Class="Concesionario.ViewWPF.Views.ReservasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Concesionario.ViewWPF.Views"
+        mc:Ignorable="d"
+        Title="Gestión de Reservas" Height="650" Width="965"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#F0F2F5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#2D2D30">
+            <Grid Margin="20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnVolver" 
+                        Grid.Column="0"
+                        Content="🡠  VOLVER" 
+                        Background="Transparent" 
+                        Foreground="#FFABCFE2" 
+                        FontSize="14" 
+                        FontWeight="Bold" 
+                        BorderThickness="0" 
+                        Cursor="Hand"
+                        Click="btnVolver_Click"/>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="GESTIÓN DE" Foreground="White" FontSize="24" Margin="0,0,8,0"/>
+                    <TextBlock Text="RESERVAS" Foreground="#FFABCFE2" FontWeight="Bold" FontSize="24"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="30">
+
+            <Border Background="White" CornerRadius="5" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="#CCC" Opacity="0.5" ShadowDepth="5"/>
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0" Background="#F9F9F9" BorderBrush="#EEE" BorderThickness="1" Padding="15" Margin="0,0,0,20" CornerRadius="4">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="txtIdReserva" Visibility="Collapsed"/>
+
+                                <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                    <TextBlock Text="Cliente (Comprador)" Foreground="Gray" FontSize="11"/>
+                                    <ComboBox x:Name="cmbCliente" Height="25"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                                    <TextBlock Text="Vehículo (Moto)" Foreground="Gray" FontSize="11"/>
+                                    <ComboBox x:Name="cmbMoto" Height="25"/>
+                                </StackPanel>
+                            </Grid>
+
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                    <TextBlock Text="Fecha Reserva" Foreground="Gray" FontSize="11"/>
+                                    <DatePicker x:Name="dpFechaReserva" Height="25"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                                    <TextBlock Text="Fecha Límite" Foreground="Gray" FontSize="11"/>
+                                    <DatePicker x:Name="dpFechaLimite" Height="25"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" Margin="0,0,10,0">
+                                    <TextBlock Text="Señal / Anticipo (€)" Foreground="Gray" FontSize="11"/>
+                                    <TextBox x:Name="txtSenal" Height="25" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Bottom">
+                                    <Button x:Name="btnLimpiar"
+                                            Content="NUEVO" 
+                                            Background="#EEE" 
+                                            Foreground="Black" 
+                                            FontWeight="Bold" 
+                                            Height="25" Width="60" 
+                                            Margin="0,0,5,0"
+                                            ToolTip="Limpiar formulario"
+                                            Click="btnLimpiar_Click"/>
+
+                                    <Button x:Name="btnGuardar"
+                                            Content="GUARDAR" 
+                                            Background="#2D2D30" 
+                                            Foreground="#FFABCFE2" 
+                                            FontWeight="Bold" 
+                                            Height="25" Width="80" 
+                                            Margin="0,0,5,0"
+                                            Click="btnGuardar_Click"/>
+
+                                    <Button x:Name="btnEliminar"
+                                            Content="ELIMINAR" 
+                                            Background="#FFEBEE" 
+                                            Foreground="Red" 
+                                            BorderBrush="Red"
+                                            BorderThickness="1"
+                                            FontWeight="Bold" 
+                                            Height="25" Width="70" 
+                                            Click="btnEliminar_Click"/>
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <DataGrid x:Name="dgReservas"
+                              Grid.Row="1"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              IsReadOnly="True"
+                              HeadersVisibility="Column"
+                              GridLinesVisibility="Horizontal"
+                              RowHeight="50"
+                              SelectionMode="Single"
+                              SelectionChanged="dgReservas_SelectionChanged"
+                              AlternatingRowBackground="#F0F0F0"
+                              BorderThickness="1"
+                              BorderBrush="#DDDDDD"
+                              FontSize="14">
+
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="#2D2D30"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Padding" Value="10"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding id_reserva}" Width="50" Foreground="Gray"/>
+
+                            <DataGridTextColumn Header="FECHA" Binding="{Binding fecha_reserva, StringFormat=d}" Width="100"/>
+
+                            <DataGridTextColumn Header="CLIENTE" Binding="{Binding Clientes.nombre}" Width="150" FontWeight="Bold"/>
+                            <DataGridTextColumn Header="DNI" Binding="{Binding Clientes.dni}" Width="100"/>
+
+                            <DataGridTextColumn Header="MOTO" Binding="{Binding Motos.modelo}" Width="150"/>
+                            <DataGridTextColumn Header="MATRÍCULA" Binding="{Binding Motos.matricula}" Width="100"/>
+
+                            <DataGridTextColumn Header="VENCE" Binding="{Binding fecha_limite, StringFormat=d}" Width="100" Foreground="#D32F2F"/>
+                            <DataGridTextColumn Header="SEÑAL" Binding="{Binding importe_senal, StringFormat=C}" Width="100" FontWeight="Bold" Foreground="#2D2D30"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <TextBlock Grid.Row="2" Text="Reservas activas y pendientes de formalizar." VerticalAlignment="Bottom" Foreground="Gray"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <Button x:Name="btnImprimir"
+            Content="🖨 INFORMES" 
+            Background="#0078D7" 
+            Foreground="White" 
+            FontWeight="Bold" 
+            FontSize="12"
+            Height="35" 
+            Padding="15,0"
+            BorderThickness="0" 
+            Cursor="Hand"
+            Click="btnImprimir_Click" Margin="809,23,30,22">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['cachedcrclientes_0',['CachedcrClientes',['../class_concesionario_1_1_model_1_1_informes_1_1_cachedcr_clientes.html',1,'Concesionario::Model::Informes']]],
+  ['cachedcrreservas_1',['CachedcrReservas',['../class_concesionario_1_1_model_1_1_informes_1_1_cachedcr_reservas.html',1,'Concesionario::Model::Informes']]],
+  ['cachedcrtaller_2',['CachedcrTaller',['../class_concesionario_1_1_model_1_1_informes_1_1_cachedcr_taller.html',1,'Concesionario::Model::Informes']]],
+  ['catalogowindow_3',['CatalogoWindow',['../class_concesionario_1_1_view_w_p_f_1_1_catalogo_window.html',1,'Concesionario.ViewWPF.CatalogoWindow'],['../class_concesionario_1_1_view_w_p_f_1_1_catalogo_window.html#aba7a9614fe4186eb73315ff97caf839e',1,'Concesionario.ViewWPF.CatalogoWindow.CatalogoWindow()']]],
+  ['clienteapi_4',['ClienteApi',['../class_concesionario_1_1_controller_1_1_a_p_i_1_1_cliente_api.html',1,'Concesionario::Controller::API']]],
+  ['clientes_5',['Clientes',['../class_concesionario_1_1_model_1_1_clientes.html',1,'Concesionario::Model']]],
+  ['clientesrepo_6',['ClientesRepo',['../class_concesionario_1_1_model_1_1_repo_1_1_clientes_repo.html',1,'Concesionario::Model::Repo']]],
+  ['clienteswindow_7',['ClientesWindow',['../class_concesionario_1_1_view_w_p_f_1_1_clientes_window.html',1,'Concesionario.ViewWPF.ClientesWindow'],['../class_concesionario_1_1_view_w_p_f_1_1_clientes_window.html#a89103b1b75d49f28f390e79258612047',1,'Concesionario.ViewWPF.ClientesWindow.ClientesWindow()']]],
+  ['concesionario_8',['Concesionario',['../namespace_concesionario.html',1,'']]],
+  ['concesionario_3a_3acontroller_9',['Controller',['../namespace_concesionario_1_1_controller.html',1,'Concesionario']]],
+  ['concesionario_3a_3acontroller_3a_3aapi_10',['API',['../namespace_concesionario_1_1_controller_1_1_a_p_i.html',1,'Concesionario::Controller']]],
+  ['concesionario_3a_3amodel_11',['Model',['../namespace_concesionario_1_1_model.html',1,'Concesionario']]],
+  ['concesionario_3a_3amodel_3a_3ainformes_12',['Informes',['../namespace_concesionario_1_1_model_1_1_informes.html',1,'Concesionario::Model']]],
+  ['concesionario_3a_3amodel_3a_3arepo_13',['Repo',['../namespace_concesionario_1_1_model_1_1_repo.html',1,'Concesionario::Model']]],
+  ['concesionario_3a_3atesting_14',['Testing',['../namespace_concesionario_1_1_testing.html',1,'Concesionario']]],
+  ['concesionario_3a_3aviewwpf_15',['ViewWPF',['../namespace_concesionario_1_1_view_w_p_f.html',1,'Concesionario']]],
+  ['concesionario_3a_3aviewwpf_3a_3aproperties_16',['Properties',['../namespace_concesionario_1_1_view_w_p_f_1_1_properties.html',1,'Concesionario::ViewWPF']]],
+  ['concesionario_3a_3aviewwpf_3a_3aviews_17',['Views',['../namespace_concesionario_1_1_view_w_p_f_1_1_views.html',1,'Concesionario::ViewWPF']]],
+  ['concesionariobdentities1_18',['ConcesionarioBDEntities1',['../class_concesionario_1_1_model_1_1_concesionario_b_d_entities1.html',1,'Concesionario::Model']]],
+  ['concesionariods_19',['ConcesionarioDS',['../class_concesionario_1_1_model_1_1_informes_1_1_concesionario_d_s.html',1,'Concesionario::Model::Informes']]],
+  ['core_20',['Entity Framework Core',['../dir_daf6588bf429d41176222f373e2ad02a.html#autotoc_md2',1,'']]],
+  ['crclientes_21',['crClientes',['../class_concesionario_1_1_model_1_1_informes_1_1cr_clientes.html',1,'Concesionario::Model::Informes']]],
+  ['crreservas_22',['crReservas',['../class_concesionario_1_1_model_1_1_informes_1_1cr_reservas.html',1,'Concesionario::Model::Informes']]],
+  ['crtaller_23',['crTaller',['../class_concesionario_1_1_model_1_1_informes_1_1cr_taller.html',1,'Concesionario::Model::Informes']]]
+];

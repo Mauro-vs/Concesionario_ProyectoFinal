@@ -1,0 +1,104 @@
+\doxysection{Concesionario.\+Controller.\+API.\+Reservas\+Api Class Reference}
+\hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api}{}\label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+
+
+\doxylink{namespace_concesionario_1_1_controller_1_1_a_p_i}{API} de gestión de reservas. Encapsula la lógica de negocio relacionada con las reservas y delega el acceso a datos en \doxylink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo}{Reservas\+Repo}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a2be04dc8102f436acada1fb3d75bf506}{Obtener\+Reservas}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las reservas registradas. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_acc84e7840785b834051eb80ee23520cb}{Obtener\+Motos\+Disponibles}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de motos disponibles (no reservadas). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_af0d0225d73280f21410a1fd841248b42}{Agregar\+Reserva}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} r)
+\begin{DoxyCompactList}\small\item\em Agrega una nueva reserva. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a44822858e359f1e930a5703a7cafed09}{Actualizar\+Reserva}} (\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} r)
+\begin{DoxyCompactList}\small\item\em Actualiza una reserva existente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a013b1720e05882aceeaee59a9d12a1ac}{Eliminar\+Reserva}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina una reserva por su identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_concesionario_1_1_controller_1_1_a_p_i}{API} de gestión de reservas. Encapsula la lógica de negocio relacionada con las reservas y delega el acceso a datos en \doxylink{class_concesionario_1_1_model_1_1_repo_1_1_reservas_repo}{Reservas\+Repo}. 
+
+\label{doc-func-members}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a44822858e359f1e930a5703a7cafed09}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}!ActualizarReserva@{ActualizarReserva}}
+\index{ActualizarReserva@{ActualizarReserva}!Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+\doxysubsubsection{\texorpdfstring{ActualizarReserva()}{ActualizarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a44822858e359f1e930a5703a7cafed09} 
+void Concesionario.\+Controller.\+API.\+Reservas\+Api.\+Actualizar\+Reserva (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza una reserva existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Objeto \doxylink{class_concesionario_1_1_model_1_1_reservas}{Reservas} con los datos actualizados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_af0d0225d73280f21410a1fd841248b42}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}!AgregarReserva@{AgregarReserva}}
+\index{AgregarReserva@{AgregarReserva}!Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+\doxysubsubsection{\texorpdfstring{AgregarReserva()}{AgregarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_af0d0225d73280f21410a1fd841248b42} 
+void Concesionario.\+Controller.\+API.\+Reservas\+Api.\+Agregar\+Reserva (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega una nueva reserva. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Objeto \doxylink{class_concesionario_1_1_model_1_1_reservas}{Reservas} con los datos de la reserva a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a013b1720e05882aceeaee59a9d12a1ac}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}!EliminarReserva@{EliminarReserva}}
+\index{EliminarReserva@{EliminarReserva}!Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+\doxysubsubsection{\texorpdfstring{EliminarReserva()}{EliminarReserva()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a013b1720e05882aceeaee59a9d12a1ac} 
+void Concesionario.\+Controller.\+API.\+Reservas\+Api.\+Eliminar\+Reserva (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina una reserva por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador de la reserva a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_acc84e7840785b834051eb80ee23520cb}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}!ObtenerMotosDisponibles@{ObtenerMotosDisponibles}}
+\index{ObtenerMotosDisponibles@{ObtenerMotosDisponibles}!Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+\doxysubsubsection{\texorpdfstring{ObtenerMotosDisponibles()}{ObtenerMotosDisponibles()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_acc84e7840785b834051eb80ee23520cb} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_motos}{Motos}} $>$ Concesionario.\+Controller.\+API.\+Reservas\+Api.\+Obtener\+Motos\+Disponibles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de motos disponibles (no reservadas). 
+
+\begin{DoxyReturn}{Returns}
+Lista de objetos \doxylink{class_concesionario_1_1_model_1_1_motos}{Motos} disponibles para reservar.
+\end{DoxyReturn}
+\Hypertarget{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a2be04dc8102f436acada1fb3d75bf506}\index{Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}!ObtenerReservas@{ObtenerReservas}}
+\index{ObtenerReservas@{ObtenerReservas}!Concesionario.Controller.API.ReservasApi@{Concesionario.Controller.API.ReservasApi}}
+\doxysubsubsection{\texorpdfstring{ObtenerReservas()}{ObtenerReservas()}}
+{\footnotesize\ttfamily \label{class_concesionario_1_1_controller_1_1_a_p_i_1_1_reservas_api_a2be04dc8102f436acada1fb3d75bf506} 
+List$<$ \doxymbox{\hyperlink{class_concesionario_1_1_model_1_1_reservas}{Reservas}} $>$ Concesionario.\+Controller.\+API.\+Reservas\+Api.\+Obtener\+Reservas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todas las reservas registradas. 
+
+\begin{DoxyReturn}{Returns}
+Lista de objetos \doxylink{class_concesionario_1_1_model_1_1_reservas}{Reservas}.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+mauro/\+\+Documents/\+\+DAM-\/\+Desenvolupament d\textquotesingle{}interfícies/\+\+Proyecto-\/final/\+\+Concesionario\+Proyecto\+Final/\+\+Concesionario.\+Controller/\+\+API/\+Reservas\+Api.\+cs\end{DoxyCompactItemize}
