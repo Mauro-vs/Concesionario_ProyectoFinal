@@ -27,7 +27,7 @@ namespace Concesionario.ViewWPF.Views
             InitializeComponent();
 
             var ds = _reporteApi.GetTallerDataSet();
-            var rpt = new crTaller();   // tu informe
+            var rpt = new crTaller();
 
             rpt.SetDataSource(ds);
             crViewer.ReportSource = rpt;

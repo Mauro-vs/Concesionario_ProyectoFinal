@@ -102,7 +102,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="InformeReservas.xaml.cs">
+    <Compile Include="Views\InformeReservas.xaml.cs">
       <DependentUpon>InformeReservas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ClientesWindow.xaml.cs">
@@ -123,7 +123,7 @@
     <Compile Include="Views\TallerWindow.xaml.cs">
       <DependentUpon>TallerWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="InformeReservas.xaml">
+    <Page Include="Views\InformeReservas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,7 +189,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Concesionario.ViewWPF_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -26,8 +26,8 @@ namespace Concesionario.ViewWPF
         {
             InitializeComponent();
 
-            var ds = _reporteApi.GetReservasDataSet(); // tu método en ReporteApi
-            var rpt = new crReservas(); // tu .rpt en Concesionario.Model
+            var ds = _reporteApi.GetReservasDataSet();
+            var rpt = new crReservas();
 
             rpt.SetDataSource(ds); 
             crViewer.ReportSource = rpt;
