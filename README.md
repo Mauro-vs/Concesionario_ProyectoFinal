@@ -31,16 +31,6 @@ El proyecto sigue una arquitectura estricta para separar la interfaz de la base 
 
 ---
 
-## 📸 Capturas de Pantalla
-
-*(Nota: Reemplaza las rutas con las imágenes reales de tu proyecto)*
-
-| Dashboard Principal | Gestión de Taller |
-| :---: | :---: |
-| <img src="ruta/a/tu/captura_dashboard.png" width="400"/> | <img src="ruta/a/tu/captura_taller.png" width="400"/> |
-
----
-
 ## 🚀 Instalación y Despliegue
 
 ### Requisitos Previos
