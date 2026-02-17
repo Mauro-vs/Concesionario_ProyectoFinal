@@ -29,7 +29,7 @@ namespace Concesionario.Controller.API
             catch (Exception ex)
             {
                 // Temporalmente, incluye el InnerException completo
-                throw new Exception("Error al obtener mantenimientos: " + ex.ToString());
+                throw new Exception("Error al obtener mantenimientos: " + ex.Message);
             }
         }
 

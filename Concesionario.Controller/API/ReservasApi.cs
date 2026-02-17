@@ -32,7 +32,7 @@ namespace Concesionario.Controller.API
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al obtener reservas: " + ex.ToString());
+                throw new Exception("Error al obtener reservas: " + ex.Message);
             }
         }
 
