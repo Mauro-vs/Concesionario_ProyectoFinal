@@ -27,7 +27,7 @@ namespace Concesionario.Controller.API
             catch (Exception ex)
             {
                 // Temporalmente, incluye el InnerException completo
-                throw new Exception("Error al obtener clientes: " + ex.ToString());
+                throw new Exception("Error al obtener modelo: " + ex.ToString());
             }
         }
 
@@ -162,7 +162,8 @@ namespace Concesionario.Controller.API
         // VALIDAR QUE LA MATRICULA SEA UNICA
         /// <summary>
         /// Valida que la matrícula de la moto sea única en el sistema. 
-        /// Si se está agregando un nuevo modelo, se verifica que no exista ningún otro modelo con la misma matrícula. /// Si se está actualizando un modelo existente, se permite que tenga la misma matrícula siempre y cuando no haya otro modelo diferente con esa matrícula.
+        /// Si se está agregando un nuevo modelo, se verifica que no exista ningún otro modelo con la misma matrícula. 
+        /// Si se está actualizando un modelo existente, se permite que tenga la misma matrícula siempre y cuando no haya otro modelo diferente con esa matrícula.
         /// </summary>
         /// <param name="matricula"> Matrícula a validar.</param>
         /// <param name="idMoto"> Identificador del modelo de moto que se está actualizando (opcional).</param>
