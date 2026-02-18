@@ -132,7 +132,7 @@ namespace Concesionario.ViewWPF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al guardar el mantenimiento: " + ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error al guardar el mantenimiento: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
