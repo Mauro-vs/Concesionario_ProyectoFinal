@@ -5,7 +5,7 @@
 ![SQL Server](https://img.shields.io/badge/Database-SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver)
 ![Crystal Reports](https://img.shields.io/badge/Reports-Crystal_Reports-f39c12?style=for-the-badge)
 
-**Hakuna Mamoto** es una aplicación de escritorio integral para la gestión completa de un concesionario de motocicletas. Desarrollada con arquitectura en capas (N-Layer), garantiza un rendimiento óptimo, código mantenible y una interfaz de usuario moderna.
+**Hakuna Mamoto** es una aplicación de escritorio integral para la gestión completa de un concesionario de motocicletas. Desarrollada con arquitectura en capas (MVC), garantiza un rendimiento óptimo, código mantenible y una interfaz de usuario moderna.
 
 ---
 
